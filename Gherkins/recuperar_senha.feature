@@ -9,11 +9,11 @@ Contexto: Estar com a página de recuperação de senha
     Dado que esteja na página home
     E tenha aberto a página recuperação de senha
 
-Cenário: Recuperar senha
+Cenário: Validar a recuperação de senha
     Quando colocar o email 
     Então é exibida mensagem
 
-Esquema do Cenário: Recuperar a senha
+Esquema do Cenário: Validar a recuperação de senha
     Quando realizar a recuperação de senha com "<email>"
     Então é exibida mensagem "<msg>"
     Exemplos:
