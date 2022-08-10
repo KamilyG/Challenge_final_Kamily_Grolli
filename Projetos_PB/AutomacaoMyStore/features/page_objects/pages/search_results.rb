@@ -6,7 +6,10 @@ module Pages
         set_url '/index.php?controller=search'
 
         section :header, Sections::Header, 'div.header-container'
-        sections :products, Sections::Products, 'ul.product_list'
+        sections :products, Sections::Products, 'div.product-container'
         
+        def access_product_page(index)
+            products[index].name.click      #click_on   #click_link
+        end
     end
 end
