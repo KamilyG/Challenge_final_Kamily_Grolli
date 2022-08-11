@@ -1,0 +1,19 @@
+Dado('que esteja na página home') do
+  @home_page = Pages::Home.new
+  @home_page.load
+end
+
+Quando('buscar por um produto existente') do
+  @home_page.search_for('Dress')
+  @search_results_page = Pages::SearchResults.new
+end
+
+Então('será retornado o resultado da busca pelo produto') do
+  expect(@search_results_page).to have_products
+  expect(@search_results_page.products.first.all_there?).to be_truthy
+end
+
+Quando('buscar por um produto {string}') do |product|
+  @home_page.search_for(product)
+  @search_results_page = Pages::SearchResults.new
+end
