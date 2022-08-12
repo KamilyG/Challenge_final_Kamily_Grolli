@@ -1,3 +1,4 @@
+#@search_for_product
 Dado('que esteja na página home') do
   @home_page = Pages::Home.new
   @home_page.load
@@ -13,6 +14,7 @@ Então('será retornado o resultado da busca pelo produto') do
   expect(@search_results_page.products.first.all_there?).to be_truthy
 end
 
+#@search_for_different_products 
 Quando('buscar por um produto {string}') do |product|
   @home_page.search_for(product)
   @search_results_page = Pages::SearchResults.new
