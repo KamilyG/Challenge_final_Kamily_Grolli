@@ -7,7 +7,7 @@ PARA personalizar minha conta
 
 Contexto: Estar na página dos meus endereços
     Dado que esteja logado
-    E esteja na página home
+    E que esteja na página home
     E tenha aberto a página dos meus endereços
 
 Cenário: Editar meus endereços

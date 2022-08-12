@@ -7,7 +7,7 @@ PARA acessar as funcionalidades
 
 Contexto: Estar com a página de login aberta
     Dado que esteja na página home
-    E tenha aberto a página para login
+    E que tenha aberto a página para login
 
 Cenário: Fazer login
     Quando colocar o email 

@@ -6,8 +6,8 @@ QUERO acessar o meu carrinho
 PARA finalizar uma compra
 
 Contexto: Estar com a página do carrinho aberto
-    Dado que esteja na página home
-    E tenha aberto a página do meu carrinho
+    Dado que tenha aberto a página de produto
+    E que tenha aberto a página do meu carrinho
 
 Cenário: Aumentar quantidade de um produto dentro do meu carrinho
     Quando aumentar a quantidade do produto no carrinho 
