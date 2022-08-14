@@ -1,5 +1,7 @@
 # language: pt
 
+@regression
+@login
 Funcionalidade: Login
 COMO usuário do e-commerce My Store
 QUERO fazer login na minha conta
@@ -9,29 +11,28 @@ Contexto: Estar com a página de login aberta
     Dado que esteja na página home
     E que tenha aberto a página para login
 
-@login_from_home
+@login_from_home       #automatizado
 Cenário: Fazer login
     Quando colocar o email 
     E colocar e confirmar a senha
     Então é exibida mensagem
 
-@validate_email_to_login
-Esquema do Cenário: Validar o login de usuário com email
-    Quando realizar o login com "<email>"
+@validate_wrong_logins        #automatizado
+Esquema do Cenário: Validar o login de usuário
+    Quando realizar o login com "<email>" e "<senha>"
     Então é exibida mensagem "<msg>"
     Exemplos:
-    | email                | msg                                 |
-    | testekg@hotmail      | Invalid email address.              |
-    |                      | An email address required.          |
-    | testekg@hotmail.com  |                                     |
+    | email                | senha  | msg                            |
+    | testekg@hotmail      |        | Invalid email address.         |
+    |                      |        | An email address required.     |
+    | testekg@hotmail.com  |        | Password is required.          |
+    | testekg@hotmail.com  | 123    | Invalid password.              |
+    | testekg@hotmail.com  | 123456 |                                |
 
-@validate_password_to_login
-Esquema do Cenário: Validar a senha para login de usuario
-    Dado que email ou telefone está correto
-    Quando realizar o login com "<senha>"
-    Então exibir mensagem "<msg>"
+@validate_ok_login          #automatizado
+Esquema do Cenário: Validar o login de usuário
+    Quando realizar o login com "<email>" e "<senha>"
+    Então é exibido o modal de mensagem "<msg>"
     Exemplos:
-    | senha     | msg                                            |
-    |           | Password is required.                          |
-    | 123       | Invalid password.                              |
-    | 123456    |                                                |
+    | email                | senha  | msg                            |
+    | testekg@hotmail.com  | 123456 |                                |
