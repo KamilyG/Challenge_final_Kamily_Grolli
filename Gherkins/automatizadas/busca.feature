@@ -1,5 +1,7 @@
 #language: pt
 
+@regression
+@busca
 Funcionalidade: Busca
 COMO usuário do e-commerce My Store
 QUERO encontrar um produto através da barra de busca
