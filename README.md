@@ -42,10 +42,10 @@ bundle exec cucumber -p default -t@regression
 * Chrome Driver
 
 ## Autora 
-Kamily Grolli
+>[Kamily Grolli](https://github.com/KamilyG)
  
  ## Referências e agradecimetos
- >[Rodrigo Lopes Picinini](https://github.com/RhodrigoLopesPicinini), pela prontidão em ajudar na implementação do arquivo env.rb para abrir o navegador na aba anônima.
+ >[Rhodrigo Lopes Picinini](https://github.com/RhodrigoLopesPicinini), pela prontidão em ajudar na implementação do arquivo env.rb para abrir o navegador na aba anônima.
 
  >[Júlia Parizotto Maciel](https://github.com/juliaparizotto), por ajudar com as diversas dúvidas que foram surgindo durante a evolução do projeto.
 
