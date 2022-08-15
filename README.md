@@ -1,8 +1,7 @@
-# Challenge_final_Kamily_Grolli
-## Challenge Sprint 5
+# Challenge Sprint 5
 Esse repositório foi criado para a postagem das atividaes de automação de testes do site Automation Practice, que serviu como base para realização dos testes pois se baseia em uma aplicação web e-commerce.
 
-# Ferramentas necessárias
+## Ferramentas necessárias
 * Git: Para baixar a versão mais recente do Git entre no site https://git-scm.com/downloads
 
 * Ruby: Para baixar a versão mais recente do Ruby entre no site https://rubyinstaller.org/downloads/
@@ -19,7 +18,7 @@ Esse repositório foi criado para a postagem das atividaes de automação de tes
   ```
 
 
-# Execução 
+## Execução 
 Para executar os testes execute o seguinte comando:
 ```sh
 bundle exec cucumber -p default -t@'nome_do_teste'
@@ -30,7 +29,7 @@ Para executar todos os testes de uma só vez use o seguinte comando:
 bundle exec cucumber -p default -t@regression
 ```
 
-# Ferramenta utilizadas
+## Ferramenta utilizadas
 * Git e Github
 * Visual Studio Code e extensões
 * CMDER
@@ -42,7 +41,7 @@ bundle exec cucumber -p default -t@regression
 * Selenium WebDriver
 * Chrome Driver
 
-# Autora 
+## Autora 
 Kamily Grolli
  
  ## Referências e agradecimetos
